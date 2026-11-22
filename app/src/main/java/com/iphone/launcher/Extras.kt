@@ -120,6 +120,5 @@ fun Modifier.frosted(
             filterQuality = FilterQuality.High
         )
     }
-    drawRect
-  (tint)
+    drawRect(color = tint)
 }
