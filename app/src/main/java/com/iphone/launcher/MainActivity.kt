@@ -498,5 +498,14 @@ fun LauncherScreen(
 
             Row(Modifier.fillMaxWidth().padding(4.dp), horizontalArrangement = Arrangement.Center) {
                 repeat(pagerState.pageCount) { i ->
-                    Box(
-                        Modifier.
+                                        Box(
+                        Modifier
+                            .padding(4.dp)
+                            .size(8.dp)
+                    )
+                }
+            }
+        }
+    }
+}
+
