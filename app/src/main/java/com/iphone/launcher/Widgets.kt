@@ -2,6 +2,7 @@ package com.iphone.launcher
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.combinedClickable
+import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -36,6 +37,7 @@ fun WidgetCard(modifier: Modifier, content: @Composable () -> Unit) {
 }
 
 @Composable
+@OptIn(ExperimentalFoundationApi::class)
 fun ClockWidgets(onLongPress: () -> Unit) {
     val now by produceState(initialValue = System.currentTimeMillis()) {
         while (true) {
